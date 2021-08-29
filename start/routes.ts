@@ -24,4 +24,4 @@ Route.get('/', async ({ view }) => {
   return view.render('welcome')
 })
 
-Route.get('/test', 'TestsController.index')
+Route.resource('posts', 'PostsController')
